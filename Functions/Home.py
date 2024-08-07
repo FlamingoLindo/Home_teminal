@@ -18,12 +18,14 @@ def open_all_links():
         open_firefox_url(url)
         
 def percentage():
-    with tqdm(total=100, desc='cpu%', position=1) as cpubar, tqdm(total=100, desc='ram%', position=0) as rambar:
+    with tqdm(total=100, desc='cpu%', position=0) as cpubar, tqdm(total=100, desc='ram%', position=2) as rambar, tqdm(total=16, desc='CPU cores', position=4) as cpucore:
         while True:
             rambar.n=psutil.virtual_memory().percent
             cpubar.n=psutil.cpu_percent()
+            cpucore.n=psutil.cpu_count()
             rambar.refresh()
             cpubar.refresh()
+            cpucore.refresh()
             sleep(0.5)
 
             if keyboard.is_pressed('esc'):
