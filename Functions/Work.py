@@ -42,3 +42,17 @@ def start_adb():
         os.system(f"adb devices")
     except Exception as e:
         print(f"Failed to start adb. Error: {e}")
+        
+def open_gen_tabs():
+    gen_tabs = [
+        "https://www.4devs.com.br/gerador_de_cpf",
+        "https://www.4devs.com.br/gerador_de_cnpj",
+        "https://www.4devs.com.br/gerador_de_cep",
+        "https://www.4devs.com.br/gerador_de_numero_cartao_credito",
+        "https://www.4devs.com.br/gerador_conta_bancaria",
+        "https://temp-mail.org/pt/"
+    ]
+
+    for tab in gen_tabs:
+        print(f"Opening {tab}...")
+        open_url(tab)
