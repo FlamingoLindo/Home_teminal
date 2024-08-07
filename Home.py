@@ -14,7 +14,8 @@ def show_home_commands():
     """Show Home commands."""
     clear_console()
     while True:
-        print("[1] Firefox tabs \n[2] Nothing here \n[3] Back to Main Menu")
+        clear_console()
+        print("[1] Firefox tabs \n[2] Nothing here \n[3] Percentage \n[4] Back to Main Menu")
         command = input("Command: ").strip().lower()
 
         if command == "1":
@@ -26,6 +27,9 @@ def show_home_commands():
             time.sleep(3)
             clear_console()
         elif command == "3":
+            clear_console()
+            percentage()
+        elif command == "4":
             clear_console()
             return
         else:
