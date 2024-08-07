@@ -72,11 +72,13 @@ def main():
     }
 
     while True:
+        clear_console()
         print("[1] Home \n[2] Work \n[3] Exit")
         command = input("Command: ").strip().lower()
 
         if command == "3":
             print("\nExiting the application.")
+            clear_console()
             break
         elif command in command_actions:
             command_actions[command]()

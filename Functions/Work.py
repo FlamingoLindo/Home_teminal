@@ -11,6 +11,7 @@ def open_multiple_asana_links():
         "https://app.asana.com/0/1207933859745403/1207934164249687",
         "https://app.asana.com/0/1206990839359887/1206991821570634",
         "https://app.asana.com/0/1207990406862834/1207991814209722",
+        "https://app.asana.com/0/1207880307298188/1207880225650921",
         "https://www.notion.so/work-esteralvim/APRESENTA-O-MOTORFIND-INTEGRA-O-faea137f72eb4f26b02ae95e685ba519?pvs=11"
     ]
 
@@ -33,6 +34,7 @@ def open_project_tabs():
         
 def start_appium():
     try:
+        os.system(f"start chrome https://inspector.appiumpro.com/")
         os.system(f"appium --allow-cors")
     except Exception as e:
         print(f"Failed to start Appium server. Error: {e}")
