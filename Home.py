@@ -1,12 +1,14 @@
 import os
 import time
 
+
 import sys
 
 # Add the path to the directory containing the Functions module
 sys.path.append(os.path.join(os.path.dirname(__file__), 'Functions'))
 
 from Functions.General import *
+
 from Functions.Work import *
 from Functions.Home import *
 
@@ -24,7 +26,7 @@ def show_home_commands():
             clear_console()
         elif command == "2":
             print("Nothing here...")
-            time.sleep(3)
+            time.sleep(1)
             clear_console()
         elif command == "3":
             clear_console()

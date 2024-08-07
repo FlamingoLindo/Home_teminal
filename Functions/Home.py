@@ -1,5 +1,5 @@
 from tqdm import tqdm
-from time import *
+import time
 import psutil
 import keyboard
 from General import open_firefox_url
@@ -18,15 +18,28 @@ def open_all_links():
         open_firefox_url(url)
         
 def percentage():
-    with tqdm(total=100, desc='cpu%', position=0) as cpubar, tqdm(total=100, desc='ram%', position=2) as rambar, tqdm(desc='CPU cores', position=4) as cpucore:
+    with (
+        tqdm(total=100, desc='cpu%', position=0, colour= 'green',) as cpubar, 
+        tqdm(total=100, desc='ram%', position=2, colour= 'green') as rambar, 
+        tqdm(desc='CPU cores', position=4,) as cpucore,
+        tqdm(desc="Disk 1", position=6, colour='green') as disk1,
+    ):
         while True:
             rambar.n=psutil.virtual_memory().percent
+
             cpubar.n=psutil.cpu_percent()
+
             cpucore.n=psutil.cpu_count()
+
+            disk1.n=psutil.disk_usage('C:').percent
+
             rambar.refresh()
+
             cpubar.refresh()
+
             cpucore.refresh()
-            sleep(0.5)
+
+            time.sleep(1.5)
 
             if keyboard.is_pressed('esc'):
                 print("\nCancelled by user.")
