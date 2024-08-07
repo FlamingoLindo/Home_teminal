@@ -1,3 +1,5 @@
+import os
+
 from General import open_url
 
 def open_multiple_asana_links():
@@ -28,3 +30,15 @@ def open_project_tabs():
     for tab in prject_tabs:
         print(f"Opening {tab}...")
         open_url(tab)
+        
+def start_appium():
+    try:
+        os.system(f"appium --allow-cors")
+    except Exception as e:
+        print(f"Failed to start Appium server. Error: {e}")
+        
+def start_adb():
+    try:
+        os.system(f"adb devices")
+    except Exception as e:
+        print(f"Failed to start adb. Error: {e}")
