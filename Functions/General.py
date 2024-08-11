@@ -1,6 +1,9 @@
 import os
 import platform
 
+import time
+import subprocess
+
 def clear_console():
     """Clear the console based on the operating system."""
     os.system("cls" if platform.system() == "Windows" else "clear")
@@ -18,3 +21,11 @@ def open_firefox_url(url):
         os.system(f"start firefox {url}")
     except Exception as e:
         print(f"Failed to open URL {url}. Error: {e}")
+
+def calendar():
+    
+    command = "Get-Date -Format 'dddd dd/MM/yyyy'"
+
+    result = subprocess.run(["powershell", "-Command", command], capture_output=True, text=True)
+
+    print(result.stdout)

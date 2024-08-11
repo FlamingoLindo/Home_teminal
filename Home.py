@@ -1,7 +1,7 @@
 import os
 import time
 
-
+import subprocess
 import sys
 
 # Add the path to the directory containing the Functions module
@@ -76,12 +76,14 @@ def main():
         "1": show_home_commands,
         "2": show_work_commands,
     }
-
+    
     while True:
         clear_console()
+        calendar()
         print("[1] Home \n[2] Work \n[3] Exit")
-        command = input("Command: ").strip().lower()
 
+        command = input("Command: ").strip().lower()
+        
         if command == "3":
             print("\nExiting the application.")
             clear_console()
