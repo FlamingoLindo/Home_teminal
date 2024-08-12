@@ -1,23 +1,12 @@
-import subprocess
-import time
+from datetime import date
 
-last = ''
-# Comando PowerShell a ser executado
-command = "Get-Date -Format 'dddd MM/dd/yyyy HH:mm'"
+today = date.today()
 
-while True:
-    try:
-        # Executando o comando PowerShell
-        result = subprocess.run(["powershell", "-Command", command], capture_output=True, text=True)
+date_ = today.strftime("%d/%m/%Y")
 
-        # Verificar se a saída atual é diferente da última saída armazenada
-        if result.stdout.strip() != last:
-            print(result.stdout.strip())
-            last = result.stdout.strip()
+a = date.weekday(today)
 
-        # Aguarda um pouco antes de repetir o loop
-        time.sleep(1.0)
+if a == 0:
+    week_day = "Segunda"
 
-    except OSError as e:
-        print(f"Error: {e}. Could not read image!")
-        time.sleep(1.5)
+print(a)
