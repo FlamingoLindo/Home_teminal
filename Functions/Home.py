@@ -59,7 +59,7 @@ def percentage():
         upload = tqdm(desc='Upload', position=9, colour='green', leave=False)"""
 
         rambar.n = psutil.virtual_memory().percent
-        cpubar.n = psutil.cpu_percent()
+        cpubar.n = psutil.cpu_percent() * 10
         vdisk.n = psutil.disk_usage('V:\\').percent
         cdisk.n = psutil.disk_usage('C:\\').percent
         

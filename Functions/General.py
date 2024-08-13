@@ -3,6 +3,8 @@ import platform
 
 import time
 import subprocess
+from datetime import date
+
 
 def clear_console():
     """Clear the console based on the operating system."""
@@ -22,10 +24,33 @@ def open_firefox_url(url):
     except Exception as e:
         print(f"Failed to open URL {url}. Error: {e}")
 
-def calendar():
-    
-    command = "Get-Date -Format 'dddd dd/MM/yyyy'"
 
-    result = subprocess.run(["powershell", "-Command", command], capture_output=True, text=True)
+def day():
+    today = date.today()
 
-    print(result.stdout)
+    date_weird = today.strftime("%d/%m/%Y")
+
+    date_string = str(date_weird)
+
+    a = date.weekday(today)
+
+    if a == 0:
+        week_day = "SEGUNDA"
+    elif a == 1:
+        week_day = "TERÇA"
+    if a == 2:
+        week_day = "QUARTA"
+    elif a == 3:
+        week_day = "QUINTA"
+    if a == 5:
+        week_day = "SEXTA"
+    elif a == 6:
+        week_day = "SABADO"
+    elif a == 7:
+        week_day = "DOMINGO"
+
+    normal = f'{week_day : ^15} {date_string : ^15}'
+
+    color_text =  u"\u001b[31;1m"f'{normal}'u'\u001b[0m'
+
+    print(color_text)

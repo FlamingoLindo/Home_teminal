@@ -1,12 +1,26 @@
-from datetime import date
+print(r"""
 
-today = date.today()
+                                   
 
-date_ = today.strftime("%d/%m/%Y")
+              _.....
+          .-'` ^    `'.
+        .'^   ^  ,_.   \
+       // , ^ _.-'-.    |
+      // /.--' '-       |
+     /;/``--.___._      ;
+     |/`    | /\ |`)   /
+     `     //`  || |  /
+          //    || | ;
+         ((     || | |
+          `:.   || \ \
+            ':. (|  `\\
+              /;||    ||
+              ||||    ;|
+              |/||   /` |
+                ||   \-p/
+                ||   | |
+              .~||~./_/
+             `~ -  ~`
 
-a = date.weekday(today)
 
-if a == 0:
-    week_day = "Segunda"
-
-print(a)
+                """)

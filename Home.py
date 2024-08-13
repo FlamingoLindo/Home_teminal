@@ -79,8 +79,8 @@ def main():
     
     while True:
         clear_console()
-        calendar()
-        print("[1] Home \n[2] Work \n[3] Exit")
+        day()
+        print("\n[1] Home \n[2] Work \n[3] Exit")
 
         command = input("Command: ").strip().lower()
         
