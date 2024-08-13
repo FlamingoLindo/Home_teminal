@@ -71,6 +71,7 @@ def show_work_commands():
             print("Unknown command. Please enter a valid option.")
 
 def main():
+    load_intro()
     """Main function to run the application."""
     command_actions = {
         "1": show_home_commands,

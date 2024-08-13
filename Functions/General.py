@@ -2,6 +2,7 @@ import os
 import platform
 
 import time
+from tqdm import trange
 import subprocess
 from datetime import date
 
@@ -54,3 +55,37 @@ def day():
     color_text =  u"\u001b[31;1m"f'{normal}'u'\u001b[0m'
 
     print(color_text)
+
+def load_intro():
+
+    intro =r"""
+
+                                   
+
+              _.....
+          .-'` ^    `'.
+        .'^   ^  ,_.   \
+       // , ^ _.-'-.    |
+      // /.--' '-       |
+     /;/``--.___._      ;
+     |/`    | /\ |`)   /
+     `     //`  || |  /
+          //    || | ;                      FLAMINGO'S USELESS
+         ((     || | |                           TERMINAL
+          `:.   || \ \
+            ':. (|  `\\
+              /;||    ||
+              ||||    ;|
+              |/||   /` |
+                ||   \-p/
+                ||   | |
+              .~||~./_/
+             `~ -  ~`
+
+
+                """
+
+    color_load = u"\u001b[35m"f'{intro}'
+    print(color_load)
+    for i in trange(100):
+        time.sleep(0.02)
