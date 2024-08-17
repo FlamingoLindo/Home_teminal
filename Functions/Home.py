@@ -2,6 +2,7 @@ from tqdm import tqdm
 import time
 import psutil
 import keyboard
+import os
 
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
@@ -91,18 +92,24 @@ def percentage():
             break
 
 def downloader():
-    
+
+    def download_folder():
+        os.system('explorer.exe TerminalDownloads')
+
     def download():
         if format == "1":
             print('Downloading: ', yt.title, 'as an MP4')
             ys = yt.streams.get_highest_resolution()
-            ys.download(output_path='Terminal Downloads')
+            ys.download(output_path='TerminalDownloads')
+            download_folder()
         elif format == "2":
             print('Downloading: ', yt.title, 'as an MP3')
             ys = yt.streams.get_audio_only()
-            ys.download(filename=yt.title + ".mp3", output_path='Terminal Downloads')
+            ys.download(filename=yt.title + ".mp3", output_path='TerminalDownloads')
+            download_folder()
 
     while True:
+
         url = input('Video URL: ')
 
         try:
@@ -125,7 +132,10 @@ def downloader():
                 print('There has been an error downloading your file!')
                 print(e)
                 continue
+
         else:
             print('\nWrong file format!')
             time.sleep(3)
             clear_console()
+    
+    
