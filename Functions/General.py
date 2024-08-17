@@ -43,11 +43,11 @@ def day():
         week_day = "QUARTA"
     elif a == 3:
         week_day = "QUINTA"
-    if a == 5:
+    if a == 4:
         week_day = "SEXTA"
-    elif a == 6:
+    elif a == 5:
         week_day = "SABADO"
-    elif a == 7:
+    elif a == 6:
         week_day = "DOMINGO"
 
     normal = f'{week_day : ^15} {date_string : ^15}'
