@@ -1,8 +1,8 @@
 # FLAMINGO'S USELESS TERMINAL
 
-This is a project made using python and different libraies that I'm developing for fun.
+This is a project made using python and different libraries, that I'm developing for fun.
 
-It started as me jsut trying to make my own taks manager perfomace graph thingy:![Perfomace thingy that I'm talking about](https://media.discordapp.net/attachments/827008047054192720/1274459699470667807/image.png?ex=66c25496&is=66c10316&hm=695636c04ffede83c57c0232c1d7b5c2ddbd19a93004c8352e9508a3f1dc10f5&=&format=webp&quality=lossless&width=805&height=589)
+It started as me just trying to make my own taks manager perfomace graph thingy:![Perfomace thingy that I'm talking about](https://media.discordapp.net/attachments/827008047054192720/1274459699470667807/image.png?ex=66c25496&is=66c10316&hm=695636c04ffede83c57c0232c1d7b5c2ddbd19a93004c8352e9508a3f1dc10f5&=&format=webp&quality=lossless&width=805&height=589)
 
 It did no go well in the beginning since I pretty much gave up on it for a while but I came up with different functionalities for it as you will see...
 
