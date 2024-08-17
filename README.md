@@ -32,5 +32,17 @@ And yes if you thing that somethings look like ChatGPT made it, its because it p
 ![Home functions](https://media.discordapp.net/attachments/827008047054192720/1274463088355184740/image.png?ex=66c257be&is=66c1063e&hm=85c94ec1b74bd5efd16a1023a1f178c105e84c536cda2b8a9170fc4ca6582ee0&=&format=webp&quality=lossless&width=1108&height=589)
 
 1. Opens my most used firefox tabs
+2. Does absoluty nothing
+3. Shows the percentage of cpu and ram being used and it also shows how much space is being used in both of my disks ![Percentage](https://media.discordapp.net/attachments/827008047054192720/1274464695436185683/image.png?ex=66c2593d&is=66c107bd&hm=341343b799b8aea6715770788bb5199ee4a0faadbfe1996d857cd2bd7b7e6cea&=&format=webp&quality=lossless&width=1139&height=589)
+4. Its a youtube video downloader using [pytubefix](https://github.com/JuanBindez/pytubefix) since I couldn't make the acctual pytube work, don't know why. You can download the video as an MP4 or MP3, once the download is the the folder containg the file will pop open
+5. Returns to previus window
 
-https://cdn.discordapp.com/attachments/827008047054192720/1274463944018493532/2024-08-17_17-24-07.mp4?ex=66c2588a&is=66c1070a&hm=5489cdb0bac6b4c52863aaeaf7e7329588f37bb4a127dc1da1bd14ad0d12ed17&
+### Work functions
+![Work fucntions](https://media.discordapp.net/attachments/827008047054192720/1274466345563590799/image.png?ex=66c25ac7&is=66c10947&hm=7811afb8c3692e0a754797dfa5b553f77d77e9c77fd9a0a8bdcac47f4d84f6f2&=&format=webp&quality=lossless&width=1131&height=589)
+
+1. Open Asana links that I use at work
+2. Open websites that I have to test (I'm a QA at the momment)
+3. Its starts an Appium server (used for mobile automatic tests)
+4. Start the ADB server so it can connect my phone to the pc
+5. Open's multiple [4devs](https://www.4devs.com.br/) windows that I use for generating informations
+6. Goes to the previus window
