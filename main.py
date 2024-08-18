@@ -11,6 +11,7 @@ from Functions.General import *
 
 from Functions.Work import *
 from Functions.Home import *
+from Functions.get_weather import *
 
 def show_home_commands():
     """Show Home commands."""
@@ -84,6 +85,7 @@ def main():
     while True:
         clear_console()
         day()
+        get_weather()
         print("\n[1] Home \n[2] Work \n[3] Exit")
 
         command = input("Command: ").strip().lower()
