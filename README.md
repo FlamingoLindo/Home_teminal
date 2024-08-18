@@ -20,7 +20,7 @@ And yes if you thing that somethings look like ChatGPT made it, its because it p
 * And for the colour text I just used [ANSI Escape Sequences](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797)
 
 ## Main window
-![Main window](https://media.discordapp.net/attachments/827008047054192720/1274738328373170197/image.png?ex=66c35814&is=66c20694&hm=d8535dc228d22214a8e9457a8ce4820777eaa85013b9c87299f22a60a8aed843&=&format=webp&quality=lossless&width=1119&height=589)
+![Main window](https://media.discordapp.net/attachments/827008047054192720/1274746231637413928/image.png?ex=66c35f71&is=66c20df1&hm=8489b59a9f5542ebcfd1a4444f9fa78929312d11530666d5a25c9cf154d2f799&=&format=webp&quality=lossless&width=1203&height=585)
 
 * This window is just used for navagating to different functionalities windows
 * It also shows the current date and weather condition
