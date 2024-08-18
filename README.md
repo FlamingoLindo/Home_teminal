@@ -20,9 +20,10 @@ And yes if you thing that somethings look like ChatGPT made it, its because it p
 * And for the colour text I just used [ANSI Escape Sequences](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797)
 
 ## Main window
-![Main window](https://media.discordapp.net/attachments/827008047054192720/1274462263822123088/image.png?ex=66c256fa&is=66c1057a&hm=bdd3bdec73b530e512a7d4b3175f6311d75f4f684fbc3b10b3bcdb080c9ce279&=&format=webp&quality=lossless&width=1115&height=589)
+![Main window](https://media.discordapp.net/attachments/827008047054192720/1274738328373170197/image.png?ex=66c35814&is=66c20694&hm=d8535dc228d22214a8e9457a8ce4820777eaa85013b9c87299f22a60a8aed843&=&format=webp&quality=lossless&width=1119&height=589)
 
-* This window is just used for navagating to different functionalities windows and it shows the current date
+* This window is just used for navagating to different functionalities windows
+* It also shows the current date and weather condition
 
 1. Home functions
 
