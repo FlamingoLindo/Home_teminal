@@ -41,7 +41,7 @@ def get_weather():
     print('┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫  ')
     print('┃ Humidity:', humidity, '%', '                        ┃')
     print('┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫  ')
-    print('┃ Wind speed: ', wind_speed, 'm/s                   ┃')
+    print('┃ Wind speed: ', wind_speed, 'm/s''                   ┃')
     print('┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫  ')
     print('┃ Cloud coverage: ', clouds_percentage, '%                   ┃')
     print('┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  ')
