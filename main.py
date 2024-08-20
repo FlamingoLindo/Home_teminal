@@ -12,13 +12,14 @@ from Functions.General import *
 from Functions.Work import *
 from Functions.Home import *
 from Functions.get_weather import *
+from Functions.get_waifu import *
 
 def show_home_commands():
     """Show Home commands."""
     clear_console()
     while True:
         clear_console()
-        print("[1] Firefox tabs \n[2] Nothing here \n[3] Percentage \n[4] Youtube Downloader \n[5] Back to Main Menu")
+        print("[1] Firefox tabs \n[2] Nothing here \n[3] Percentage \n[4] Youtube Downloader \n[5] Get waifu \n[6] Back to Main Menu")
         command = input("Command: ").strip().lower()
 
         if command == "1":
@@ -36,6 +37,11 @@ def show_home_commands():
             clear_console()
             downloader()
         elif command == "5":
+            clear_console()
+            get_waifu()
+            time.sleep(1.5)
+            clear_console()
+        elif command == "6":
             clear_console()
             return
         else:
